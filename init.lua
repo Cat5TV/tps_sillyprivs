@@ -7,8 +7,6 @@ minetest.register_chatcommand("poop", {
 })
 
 local function poop(player)
-	local leveltitle=" restricted player" -- the lowest level
-	local levelnum=0
 	local pname = minetest.get_player_by_name(player)
-	minetest.chat_send_player(player, playername .. " pooped.")
+	minetest.chat_send_player(player, pname .. " pooped.")
 end
