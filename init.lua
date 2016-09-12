@@ -8,6 +8,12 @@ minetest.register_chatcommand("poop", {
 
 local function poop(player)
 	local pname = minetest.get_player_by_name(player)
+	local target_coords=pname:getpos()
+	--minetest.add_item(target_coords, poop)
+	--minetest.sound_play("poop", {
+	--	to_player = player:get_player_name(),
+	--	gain = 0.4,
+	--})
 	minetest.chat_send_player(player, pname .. " pooped.")
 end
 
